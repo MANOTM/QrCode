@@ -1,0 +1,37 @@
+.line-height{
+    line-height: 1.1 !important;
+}
+.line-height .my-span{
+    border-width: 3px;
+    padding: 0 4px !important;
+    position: relative;
+}
+
+.line-height .my-span span{ 
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(79, 70, 229); 
+}
+
+.line-height .my-span span:first-child{ 
+    top: -6px;
+    left: -6px;
+}
+.line-height .my-span span:last-child{ 
+    bottom:  -6px;
+    left: -6px;
+}
+.line-height .my-span span:nth-child(2){ 
+    top: -6px;
+    right: -6px;
+}
+.line-height .my-span span:nth-child(3){ 
+    bottom:  -6px;
+    right: -6px;
+} 
+@media  (max-width: 622px) {
+    .my-img {
+      display: none;
+    }
+  }
