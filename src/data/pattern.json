@@ -1,0 +1,10 @@
+[
+    {"title":"square","src":"https://www.qrcode-monkey.com/img/qr/body/square.png"},
+    {"title":"circle","src":"https://www.qrcode-monkey.com/img/qr/body/circle.png"},
+    {"title":"circular","src":"https://www.qrcode-monkey.com/img/qr/body/circular.png"},
+    {"title":"mosaic","src":"https://www.qrcode-monkey.com/img/qr/body/mosaic.png"},
+    {"title":"circle-zebra-vertical","src":"https://www.qrcode-monkey.com/img/qr/body/circle-zebra-vertical.png"},
+    {"title":"rounded-pointed","src":"https://www.qrcode-monkey.com/img/qr/body/rounded-pointed.png"},
+    {"title":"dot","src":"https://www.qrcode-monkey.com/img/qr/body/dot.png"},
+    {"title":"star","src":"https://www.qrcode-monkey.com/img/qr/body/star.png"}
+]

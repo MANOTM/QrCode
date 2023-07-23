@@ -1,0 +1,10 @@
+.objet.active div:first-child{
+    border: 2px solid #2463f6 !important;
+    background-color: transparent !important;
+}
+.objet.active svg{
+    fill: #2463f6 !important;
+}
+.objet svg{
+    fill: #bcbcbcbd;
+}

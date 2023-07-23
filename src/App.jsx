@@ -2,13 +2,14 @@ import Container from './layouts/Container'
 import BgGradient from "./components/Helper/BgGradient"
 import Header from './components/Header/Header'
 import Landing from './components/Landing/Landing'
+import Logic from './components/Logic/Logic'
 
 
 function App() {
-
+  const k = undefined
   return (
     <Container>
-      <Header/>
+      <Header />
       <div className="relative isolate px-6  lg:px-8">
 
         <div
@@ -33,6 +34,7 @@ function App() {
         </div>
       </div>
 
+      <Logic />
     </Container>
   )
 }

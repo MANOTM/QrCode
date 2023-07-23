@@ -1,0 +1,9 @@
+.config {
+
+}
+.pattern div:first-child, .config .active{
+    border: 2px solid #2463f6 !important;
+    background-color: #e5e5e57d;
+    cursor: pointer;
+    opacity: 1 !important;
+}
