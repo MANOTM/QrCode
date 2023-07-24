@@ -1,14 +1,30 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import './preview.css'
 import { context } from '../../context/QrContext'
 import LoadingEff from '../../assets/loading.gif'
 import axios from 'axios'
+import LoadingIcon from '../Icons/LoadingIcon'
 
 
 export default function Preview() {
   const { ActiveDes, input, setInput, currentColor, currentImgType } = useContext(context)
   const [src, setSrc] = useState('')
   const [loading, setLoading] = useState(true)
+  const [leadingDownload,setleadingDownload]=useState(0)
+  const download =()=>{ 
+    setleadingDownload(true)
+    fetch(src)
+    .then(response => response.blob())
+    .then(blob => {
+      const url = URL.createObjectURL(blob);
+      const downloadLink = document.createElement("a");
+      downloadLink.href = url;
+      downloadLink.download = "Qr_Code";
+      downloadLink.click();
+      URL.revokeObjectURL(url);
+      setleadingDownload(false)
+    });
+  }
   useEffect(() => {
     setLoading(true)
     if (!input) {
@@ -48,12 +64,12 @@ export default function Preview() {
               </div>
             }
 
-            <img className={`w-full ${loading && 'opacity-25'}`} src={src} />
+            <img className={`w-full ${loading && 'opacity-25'}`}  src={src} />
 
           </div>
         </div>
       </div>
-      <button className='mt-9 w-full rounded-md bg-blue-600 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-500		focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Download QR Code</button>
+      <button onClick={download} className={`btn-coll ${leadingDownload && 'pointer-events-none opacity-90'}`}>{leadingDownload?<LoadingIcon fill="#fffffc"/>:'Download Code Qr'}  </button>
     </div>
   )
 }

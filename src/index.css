@@ -8,7 +8,9 @@
 .objetColl{
   @apply mb-5 flex flex-col w-20 items-center cursor-pointer
 }
-
+.btn-coll{
+  @apply flex justify-center items-center mt-9 w-full rounded-md bg-blue-600 h-14 text-base font-semibold text-white shadow-sm hover:bg-blue-500		focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+}
 .my-shadow{
   background-color: #fffffc;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -52,7 +54,9 @@ body {
 main {
   display: block;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
