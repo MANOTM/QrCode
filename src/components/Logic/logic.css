@@ -7,3 +7,48 @@
     margin-bottom: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
 }
+@media (max-width:1170px){
+    .my-f-resp{
+        flex-wrap: wrap;
+    }
+    .my-f-resp .preview{
+        width: calc(100% - 275px);
+    }
+    .my-f-resp .config{
+        width: 100% ;
+    }
+    .my-w-resp{
+        width:48%;
+    }
+    
+} 
+@media (max-width:780px){
+    .my-f-resp .destination{
+        width: 100%;
+    }
+    .my-f-resp .preview{
+        width: 100% ;
+    }
+    .my-f-resp .config{
+        width: 100% ;
+    }
+    .my-w-resp{
+        width:100%;
+    }
+    
+} 
+@media (max-width:480px){ 
+        .preview .my-fa-img{
+        width: 100%;
+        height: 100%;
+    } 
+    .preview{
+        min-width: 0px  ;
+    }
+    .destination .gap-2{
+        gap: 0;
+    }
+    .config .gap-6{
+        gap: 1rem;
+    }
+} 

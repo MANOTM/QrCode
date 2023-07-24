@@ -6,7 +6,7 @@ import './logic.css'
 export default function Logic() {
 
   return (
-    <div className='flex gap-10 flex-wrap my-container p-6 rounded-md '>
+    <div className='flex gap-10  my-container p-6 rounded-md my-f-resp'>
         <Destination/>
         <Preview/>
         <Config />
