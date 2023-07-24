@@ -26,7 +26,7 @@ export default function Landing() {
                     >
                         Get started
                     </a>
-                    <a href="#" className=" rounded-md px-5 py-2.5 text-base font-semibold 
+                    <a href="#preview" className=" rounded-md px-5 py-2.5 text-base font-semibold 
               bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                         Learn more
                     </a>
