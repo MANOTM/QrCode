@@ -55,7 +55,10 @@ export default function Preview() {
     <div className='rounded-md my-shadow  preview p-5 w-[45%]'>
       <div>
         <div className='font-semibold text-lg pb-3'>Enter your {ActiveDes?.label}</div>
-        <input value={input} onChange={e => setInput(e.target.value)} className="border-2 rounded-md w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500" type="text" placeholder={ActiveDes?.label} />
+        <input value={input} onChange={e => setInput(e.target.value)} className="border-2 rounded-md w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500 " type="text" placeholder={ActiveDes?.label} />
+       
+        {/* <small className='text-red-500 ml-1'>Incorrecte Url</small> */}
+
       </div>
       <div>
         <div className='font-semibold text-lg pb-3 mt-5 text-center' id='preview'>Live Preview</div>
@@ -72,7 +75,7 @@ export default function Preview() {
           </div>
         </div>
       </div>
-      <button onClick={download} className={`btn-coll ${leadingDownload && 'pointer-events-none opacity-90'}`}>{leadingDownload?<LoadingIcon fill="#fffffc"/>:'Download Code Qr'}  </button>
+      <button onClick={download} className={`btn-coll ${leadingDownload || !input && 'pointer-events-none opacity-80'}`}>{leadingDownload?<LoadingIcon fill="#fffffc"/>:'Download Code Qr'}  </button>
     </div>
   )
 }
