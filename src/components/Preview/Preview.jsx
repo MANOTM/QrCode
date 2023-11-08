@@ -1,8 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react'
 import './preview.css'
 import { context } from '../../context/QrContext'
-import LoadingEff from '../../assets/loading.gif'
-import axios from 'axios'
 import LoadingIcon from '../Icons/LoadingIcon'
 
 
