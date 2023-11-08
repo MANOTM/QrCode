@@ -16,7 +16,7 @@ function Header() {
                     </a>
                 </div>
                 <div className=" lg:flex lg:flex-1 lg:justify-end">
-                    <a href="http://manotm.tk/" target='_blank' className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="https://manotm.vercel.app/" target='_blank' className="text-sm font-semibold leading-6 text-gray-900">
                         Manotm <span aria-hidden="true">→</span>
                     </a>
                 </div>
